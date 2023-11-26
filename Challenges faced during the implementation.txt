@@ -1,0 +1,16 @@
+
+While implementing the grid-based puzzle solver using the A* algorithm, several challenges were encountered and resolved throughout the development process:
+
+1.	Algorithm Selection: Choosing the most suitable algorithm for pathfinding was the initial challenge. A* was selected due to its efficiency in finding the shortest path in grid-based environments with obstacles.
+2.	Heuristic Design: Designing an appropriate heuristic function (Manhattan distance in this case) to guide the search was crucial. Ensuring it accurately estimated the cost to reach the goal without overestimating or underestimating was challenging.
+3.	Handling Unsolvability: Dealing with scenarios where the puzzle is unsolvable required careful consideration. Error handling was added to the A* algorithm to detect unsolvable instances and raise an exception, providing informative feedback to the user.
+4.	Optimizing Neighbors Search: Determining the neighboring cells while avoiding obstacles or cells marked as walls was important. Implementing the logic to identify valid neighboring cells within the grid was a key challenge.
+5.	Testing and Debugging: Ensuring the algorithm's correctness and efficiency posed challenges during testing. Debugging and validating the pathfinding process for different grid sizes and random start and exit points was essential.
+6.	Efficiency and Complexity: Balancing efficiency and computational complexity was another challenge. Optimizing the A* algorithm for larger grids without sacrificing accuracy was a significant consideration.
+
+To address these challenges:
+
+•	Thorough testing with various grid configurations was performed to validate the algorithm's correctness and detect any edge cases or unsolvable scenarios.
+•	Detailed error handling was implemented to provide clear messages when unsolvable instances occurred.
+•	Careful planning and logic design were applied to optimize the search process while ensuring accuracy.
+•	Regular code reviews and revisions were conducted to enhance readability, efficiency, and error handling.

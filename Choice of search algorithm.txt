@@ -1,0 +1,11 @@
+
+This is an implementation of the A* search algorithm, which is a heuristic search algorithm used in pathfinding and graph traversal. The following are reasons for using the A* algorithm for this problem:
+
+1.	Completeness and Optimality: A* is both complete (i.e. guaranteed to find a solution if one exists) and optimal (guaranteed to find the shortest path if the heuristic is admissible). This is important in terms of finding an efficient path from the start to the exit point in the grid-based puzzle.
+2.	Heuristic: A* uses a heuristic function (i.e. Manhattan distance in this case) to estimate the cost from the current node to the goal. This makes it efficient, especially in scenarios like pathfinding, where the search space is vast.
+3.	Time Complexity: A* combines the advantages of both Dijkstra's algorithm (uniform-cost search) and greedy best-first search by considering both the actual cost from the start node and the estimated cost to the goal node. This often results in better performance in terms of time complexity compared to uninformed search algorithms.
+4.	Space Complexity: Although A* requires more memory to store the open set, closed set, and other auxiliary data structures, its space complexity is generally acceptable in practical scenarios.
+5.	Adaptability: The A* algorithm is versatile and can be adapted for various types of grids and heuristics, making it suitable for different scenarios without significant changes.
+6.	Efficiency in Grid-based Problems: A* is particularly well-suited for grid-based problems, like the one presented in the problem statement, where the agent needs to navigate through a maze or grid to reach the goal. The algorithm's ability to efficiently explore grid-based spaces and find optimal paths makes it a suitable choice for this scenario.
+
+Putting these factors into consideration, the A* algorithm is a suitable choice for solving the pathfinding problem in the grid-based puzzle. Its efficiency and optimality in finding paths make it a compelling algorithm for this context.
